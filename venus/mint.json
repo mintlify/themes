@@ -14,12 +14,12 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Login",
       "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Get API Keys",
     "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
