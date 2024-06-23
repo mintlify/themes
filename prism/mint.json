@@ -24,7 +24,7 @@
   },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "",
       "pages": [
         "introduction",
         "quickstart",
