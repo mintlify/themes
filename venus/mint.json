@@ -30,8 +30,8 @@
   ],
   "anchors": [
     {
-      "name": "Sandbox",
-      "icon": "shovel-snow",
+      "name": "Playground",
+      "icon": "circle-play",
       "url": "https://mintlify.com"
     },
     {
