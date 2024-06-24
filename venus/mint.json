@@ -32,22 +32,26 @@
     {
       "name": "Playground",
       "icon": "play",
-      "url": "https://mintlify.com"
+      "url": "https://mintlify.com",
+      "iconType": "regular"
     },
     {
       "name": "Account",
       "icon": "user",
-      "url": "https://mintlify.com"
+      "url": "https://mintlify.com",
+      "iconType": "regular"
     },
     {
       "name": "Changelog",
       "icon": "list-timeline",
-      "url": "https://mintlify.com"
+      "url": "https://mintlify.com",
+      "iconType": "regular"
     },
     {
       "name": "Support",
       "icon": "question",
-      "url": "https://mintlify.com"
+      "url": "https://mintlify.com",
+      "iconType": "regular"
     }
   ],
   "navigation": [
