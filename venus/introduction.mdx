@@ -13,10 +13,21 @@ import { LearnMoreLink } from '/snippets/components.mdx'
   >
     Get your docs set up locally for easy development
     <div className="mt-4 text-primary font-medium space-y-2">
-      <div><a href="/quickstart">Quickstart</a></div>
-      <div><a href="/development">Development</a></div>
-      <div><a href="/essentials/markdown">Editing</a></div>
+      <a href="/quickstart"><div>Quickstart</div></a>
+      <a href="/development"><div>Development</div></a>
+      <a href="/essentials/markdown"><div>Editing</div></a>
     </div>
+  </Card>
+  <Card
+    title="API Reference"
+    icon="terminal"
+  >
+    Preview your changes before you push to make sure they're perfect
+    <ul className="mt-4 text-primary font-medium space-y-2">
+      <a href="/api-reference/endpoint/get"><li>Get plants</li></a>
+      <a href="/api-reference/endpoint/create"><li>Create plant</li></a>
+      <a href="/api-reference/endpoint/delete"><li>Delete plant</li></a>
+    </ul>
   </Card>
 </CardGroup>
 
