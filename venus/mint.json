@@ -31,7 +31,7 @@
   "anchors": [
     {
       "name": "Playground",
-      "icon": "circle-play",
+      "icon": "play",
       "url": "https://mintlify.com"
     },
     {
