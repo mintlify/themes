@@ -26,6 +26,10 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Libraries",
+      "url": "libraries"
     }
   ],
   "anchors": [
@@ -86,6 +90,12 @@
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete"
+      ]
+    },
+    {
+      "group": "Libraries",
+      "pages": [
+        "libraries/nodejs"
       ]
     }
   ],
