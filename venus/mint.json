@@ -4,7 +4,8 @@
   "theme": "venus",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://starter-venus.mintlify.app/"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -101,7 +102,7 @@
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://linkedin.com/company/mintlify",
+    "github": "https://github.com/mintlify"
   }
 }
