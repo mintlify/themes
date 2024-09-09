@@ -1,9 +1,9 @@
 # Mintlify Themes
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://mintlify-assets.b-cdn.net/hero-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://mintlify-assets.b-cdn.net/hero-light.png">
-  <img alt="Mintlify Themes" src="https://mintlify-assets.b-cdn.net/hero-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/cef3ad5b-335a-43ab-82ae-90844eddf671">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/b5cc5c07-cfb4-45b8-b6e2-4a8290c37db4">
+  <img alt="Mintlify Themes" src="https://github.com/user-attachments/assets/cef3ad5b-335a-43ab-82ae-90844eddf671">
 </picture>
 
 No one wants their documentation to look like everyone else's. Themes enables you to transform the styling and layout of your documentation to fit your branding.
