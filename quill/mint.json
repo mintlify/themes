@@ -4,7 +4,8 @@
   "theme": "quill",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://starter-quill.mintlify.app/"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -81,8 +82,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/mintlify",
+    "linkedin": "https://linkedin.com/company/mintlify",
+    "github": "https://github.com/mintlify"
   }
 }
