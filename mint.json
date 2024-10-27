@@ -38,13 +38,13 @@
       ]
     },
     {
-      "group": "Applications",
+      "group": "Services",
       "pages": [
-        "applications/markdown",
-        "applications/code",
-        "applications/images",
-        "applications/settings",
-        "applications/navigation"
+        "services/markdown",
+        "services/code",
+        "services/images",
+        "services/settings",
+        "services/navigation"
       ]
     },
     {
