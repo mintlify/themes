@@ -27,9 +27,9 @@
     {
       "group": "",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "main/introduction",
+        "main/quickstart",
+        "main/development"
       ]
     },
     {
