@@ -38,14 +38,19 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Applications",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "applications/markdown",
+        "applications/code",
+        "applications/images",
+        "applications/settings",
+        "applications/navigation"
+      ]
+    },
+    {
+      "group": "Examples",
+      "pages": [
+        "examples/code"
       ]
     },
     {
