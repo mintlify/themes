@@ -1,0 +1,64 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "CentML Platform",
+  "theme": "prism",
+  "layout": "solidSidenav",
+  "logo": {
+    "dark": "https://centml.ai/wp-content/themes/centml/inc/assets/img/centml-logo-light.svg",
+    "light": "https://centml.ai/wp-content/themes/centml/inc/assets/img/centml-logo-dark.svg",
+    "href": "https://centml.ai/"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#004331",
+    "light": "#00A87B",
+    "dark": "#33B995",
+    "background": {
+        "light": "#E5F6F2",
+        "dark": "#004331"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Get in Touch",
+      "url": "mailto:support@centml.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://app.centmlcom"
+  },
+  "navigation": [
+    {
+      "group": "",
+      "pages": [
+        "main/introduction",
+        "main/quickstart",
+        "main/concepts"
+      ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "Clients",
+      "pages": [
+        "clients/cli",
+        "clients/sdk"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/CentML_Inc",
+    "linkedin": "https://www.linkedin.com/company/centml/",
+    "github": "https://github.com/CentML"
+  }
+}
