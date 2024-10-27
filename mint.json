@@ -54,14 +54,6 @@
         "clients/cli",
         "clients/sdk"
       ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "clients/endpoint/get",
-        "clients/endpoint/create",
-        "clients/endpoint/delete"
-      ]
     }
   ],
   "footerSocials": {
