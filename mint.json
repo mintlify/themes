@@ -51,15 +51,15 @@
     {
       "group": "Clients",
       "pages": [
-        "api-reference/introduction"
+        "clients/introduction"
       ]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "clients/endpoint/get",
+        "clients/endpoint/create",
+        "clients/endpoint/delete"
       ]
     }
   ],
