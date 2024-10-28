@@ -25,26 +25,25 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://app.centmlcom"
+    "name": "Go to Console",
+    "url": "https://app.centml.com"
   },
   "navigation": [
     {
       "group": "",
       "pages": [
         "main/introduction",
-        "main/quickstart",
-        "main/concepts"
+        "main/quickstart"
       ]
     },
     {
-      "group": "Services",
+      "group": "Applications",
       "pages": [
-        "services/markdown",
-        "services/code",
-        "services/images",
-        "services/settings",
-        "services/navigation"
+        "services/serverless",
+        "services/llm",
+        "services/inference",
+        "services/compute",
+        "services/rag"
       ]
     },
     {
@@ -58,6 +57,12 @@
       "pages": [
         "clients/cli",
         "clients/sdk"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/pricing"
       ]
     }
   ],
