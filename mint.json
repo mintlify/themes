@@ -37,19 +37,18 @@
       ]
     },
     {
-      "group": "Applications",
+      "group": "Deployments",
       "pages": [
-        "services/serverless",
-        "services/llm",
-        "services/inference",
-        "services/compute",
-        "services/rag"
+        "apps/llm",
+        "apps/inference",
+        "apps/compute",
+        "apps/rag"
       ]
     },
     {
       "group": "Examples",
       "pages": [
-        "examples/code"
+        "examples/chat"
       ]
     },
     {
@@ -62,6 +61,7 @@
     {
       "group": "Resources",
       "pages": [
+        "resources/byoi",
         "resources/pricing"
       ]
     }
