@@ -32,8 +32,8 @@
     {
       "group": "",
       "pages": [
-        "main/introduction",
-        "main/quickstart"
+        "home/introduction",
+        "home/quickstart"
       ]
     },
     {
