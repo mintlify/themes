@@ -42,4 +42,28 @@ For advanced users, CentML Platform also offers an option to customize their mod
 ## 3. Deploy
 Finally, click "Deploy". Once the deployment is ready in a few minutes, copy the endpoint url and go to `https://<endpoint_url>/docs` to find the list of API endpoints to start using your LLM deployment. We offer API compatibility with CServe, OpenAI, and Cortex, making integration with other applications seamless.
 
+```
+curl -X 'POST' 'https://<endpoint_url>/openai/v1/chat/completions' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is the meaning of life?"
+    }
+  ],
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "max_tokens": 512,
+  "n": 1,
+  "presence_penalty": 0,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "temperature": 0.7,
+  "top_p": 1
+}'
+```
+
 For more details on how to use the LLM deployment, please refer to the [examples](/examples/chat) we've provided.
