@@ -1,88 +1,55 @@
 ---
 title: 'General Inference'
-description: 'Text, title, and styling in standard markdown'
+description: 'Deploy and scale any model'
 icon: 'circle-nodes'
 ---
 
-## Titles
+We make it easy for you to containerize and deploy any custom models on our platform. In addition, we also provide popular inference engines like vLLM and Ollama.
 
-Best used for section headers.
+## 1. Configure your inference deployment
 
-```md
-## Titles
-```
+Select or enter a container inference engine image, tag and container port.
 
-### Subtitles
-
-Best use to subsection headers.
-
-```md
-### Subtitles
-```
+<Frame>
+    <img src="/images/inf_1.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
 <Tip>
-
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
-
+To make the endpoint private, select the "Make it a private endpoint?" option. This will automatically generate a TLS certificate, which you can download as a .pem file after the deployment is complete. Only those with this TLS certificate will have access to the endpoint. For more details, please refer to [examples](/examples/private) we've provided.
 </Tip>
 
-## Text Formatting
+For further customization, you can configure the optional fields as well.
 
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
+- **healthcheck:** HTTP health check endpoint to check if the inference engine is ready to accept requests. Default is None.
+- **command and arguments:** Entrypoint command and arguments to run when the container starts. Default is entrypoints specified in the container image.
+- **autoscaling:** Set the min and max scale for your deployment. We scale up and down your deployment to match the traffic based on the max concurrency set. Max concurrency refers to the maximum number of in-flight requests per replica. Default is infinity.
+- **environment variables:** Pass in any additional environment variables to the container. e.g, HF_TOKEN
 
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
+<Tip>
+For building your own custom container image and deploying on CentML Platform, please refer to the [examples](/examples/custom_image).
+</Tip>
 
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
+## 2. Select the cluster and hardware to deploy
+By default, CentML Platform provides several managed clusters and GPU instances for you to deploy your inference containers. 
 
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
+<Frame>
+    <img src="/images/inf_2.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
+Select the regional cluster and hardware instance that best fits your need and click Deploy.
 
-## Linking to Pages
 
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
+## 3. Monitor your deployment
+Once deployed, you can see all your deployments under the listing view along with their current status.
 
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
+<Frame>
+    <img src="/images/inf_3.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
+Click on the deployment to view the details page, logs and monitoring information.
 
-## Blockquotes
+<Frame>
+    <img src="/images/inf_4.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-### Singleline
-
-To create a blockquote, add a `>` in front of a paragraph.
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
-```
-
-### Multiline
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-### LaTeX
-
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
-
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+Once the deployment status is ready, the container port is going to be exposed under the endpoint url shown in the details page and can be accessed through `https://<endpoint_url>`.
