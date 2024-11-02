@@ -48,7 +48,9 @@
     {
       "group": "Examples",
       "pages": [
-        "examples/chat"
+        "examples/chat",
+        "examples/custom_image",
+        "examples/private"
       ]
     },
     {
