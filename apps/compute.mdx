@@ -1,66 +1,31 @@
 ---
 title: 'Compute Instance'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: 'Launch an on-demand GPU instance and start building'
 icon: 'microchip'
 ---
 
-The navigation menu is the list of links on every website.
+On-demand GPU instances with SSH access to run any GPU-accelerated workloads and let you run, test, and experiment with any AI application seamlessly.
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+## 1. Select a base image
 
-## Navigation syntax
+Spin up a compute instance with your preferred base image (e.g. PyTorch). Enter your ssh public key to configure access to the instance.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+<Frame>
+    <img src="/images/comp_1.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<CodeGroup>
+Finally, select a GPU instance type and click Deploy.
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
+## 2. SSH into the instance
+
+Once the instance is ready, ssh into the endpoint url provided in the deployment details page with username `centml`.
+
+<Frame>
+    <img src="/images/comp_2.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+The instance comes preinstalled with NVIDIA drivers and libraries, as well as those included in your selected base image. Additional packages and libraries can be installed via pip.
+
+```bash
+pip install vllm
 ```
-
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `mint.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
-
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
