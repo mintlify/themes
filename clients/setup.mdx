@@ -1,0 +1,64 @@
+---
+title: 'Client Setup'
+description: 'Installation steps for CentML client'
+icon: 'square-terminal'
+---
+
+We provide a client library to programmatically interact with CentML Platform either through [command line](/resources/cli) or using [Python SDK](/resources/sdk).
+
+Use the following command to install centml client.
+
+```bash
+pip install centml
+```
+
+Run the following command to login to CentML using the client credentials.
+
+```bash
+centml login
+```
+
+The first time, you'll be prompted to download the credentials from the CentML Platform console under [Accounts -> Credentials](https://app.centml.com/user/credentials).
+
+<Frame>
+    <img src="/images/credentials.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Run the login command again with the downloaded credential file.
+
+```bash
+centml login <path_to>/credentials.json
+```
+
+Once logged in, you are all set to use CentML client. You can use centml CLI command to list your deployments.
+
+```bash
+centml cluster ls
+
+# Alternatively, as a shorthand
+ccluster ls
+```
+
+Checkout other supported commands,
+```bash
+ccluster --help
+Usage: ccluster [OPTIONS] COMMAND [ARGS]...
+
+  CentML cluster CLI tool
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  delete  Delete a deployment
+  get     Get deployment details
+  ls      List all deployments
+  pause   Pause a deployment
+  resume  Resume a deployment
+```
+
+To logout, use the following command.
+
+```bash
+centml logout
+```

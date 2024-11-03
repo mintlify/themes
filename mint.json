@@ -46,22 +46,15 @@
       ]
     },
     {
-      "group": "Examples",
-      "pages": [
-        "examples/chat"
-      ]
-    },
-    {
       "group": "Clients",
       "pages": [
-        "clients/cli",
+        "clients/setup",
         "clients/sdk"
       ]
     },
     {
       "group": "Resources",
       "pages": [
-        "resources/byoi",
         "resources/custom_image",
         "resources/private",
         "resources/pricing"

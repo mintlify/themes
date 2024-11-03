@@ -4,31 +4,18 @@ description: 'Access CentML Platform through python'
 icon: 'python'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+We provide a Python SDK to programmatically access CentML Platform backend APIs to manage your deployments.
 
-## Welcome
+Following is a sample code to list all the inference deployments under your account.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+```python
+import centml
+from centml.sdk.api import get_centml_client
+from centml.sdk import DeploymentType
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+with get_centml_client() as cclient:
+    deployments = cclient.get(DeploymentType.INFERENCE_V2)
+    print(deployments)
 ```
+
+For more details, please refer to https://github.com/CentML/centml-python-client
