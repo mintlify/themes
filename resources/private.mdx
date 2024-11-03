@@ -9,7 +9,7 @@ By default, endpoints created for both LLM Serving and General Inference deploym
 This setting generates a TLS certificate upon deployment, which you can download. Access to the endpoint will then require the http client to use this certificate. Here are a few examples:
 
 
-Using curl command
+**Using curl command**
 ```bash
 curl -X 'POST' 'https://<endpoint_url>/openai/v1/chat/completions' \
   --cert <path to TLS certificate> \   # Downloaded certificate
@@ -37,14 +37,14 @@ curl -X 'POST' 'https://<endpoint_url>/openai/v1/chat/completions' \
 
 
 
-Using httpx
+**Using httpx library**
 ```python
 import httpx
 
 client = httpx.Client(cert="<path to TLS certificate>")
 ```
 
-Using OpenAPI client library
+**Using OpenAPI client library**
 ```python
 import httpx
 from openai import OpenAI
