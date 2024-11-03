@@ -3,3 +3,28 @@ title: 'Deploying custom models'
 description: 'How to build your own containerized inference engine and deploy'
 icon: 'screwdriver-wrench'
 ---
+
+The CentML Platform simplifies deploying your custom models and AI applications. Package your model or application as a containerized HTTP server, then deploy it on CentML using the General Inference deployment option.
+
+Here’s an example of how to build a stable diffusion model served by a FastAPI-based inference server: https://github.com/CentML/codex/tree/main/general-apps/general-inference/stable-diffusion/centml-endpoint
+
+<Note>
+By default, Docker containers run as the root user. However, the CentML Platform restricts running containers as root for security reasons. To address this, ensure that you create the container image using a non-root numeric user.
+
+Here’s an example of how you can configure this in a Dockerfile,
+```docker
+# Create a new user to run the application required for centml endpoints
+ARG USERNAME="centml"
+RUN useradd -u 1024 -m -d /home/${USERNAME} -s /bin/bash ${USERNAME} && chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}
+USER 1024
+```
+</Note>
+
+<Note>
+If you are building the container on MacOS, make sure to set the image platform as `linux/amd64`.
+```bash
+docker build --platform linux/amd64 -t stable-diffusion:latest .
+```
+</Note>
+
+After building the container, push it to a public container registry, such as [Docker Hub](https://hub.docker.com/). Then, navigate to the General Inference option in the CentML Platform and enter the image name, tag, and container port to deploy your application.
