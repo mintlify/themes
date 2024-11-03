@@ -3,3 +3,55 @@ title: 'Private Inference Endpoints'
 description: 'How to create private inference endpoints'
 icon: 'lock'
 ---
+
+By default, endpoints created for both LLM Serving and General Inference deployments are publicly accessible. If you prefer restricted access, you can make the endpoint private by selecting the <em>Make it a private endpoint?</em> option.
+
+This setting generates a TLS certificate upon deployment, which you can download. Access to the endpoint will then require the http client to use this certificate. Here are a few examples:
+
+
+Using curl command
+```bash
+curl -X 'POST' 'https://<endpoint_url>/openai/v1/chat/completions' \
+  --cert <path to TLS certificate> \   # Downloaded certificate
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is the meaning of life?"
+    }
+  ],
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "max_tokens": 512,
+  "n": 1,
+  "presence_penalty": 0,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "temperature": 0.7,
+  "top_p": 1
+}'
+```
+
+
+
+Using httpx
+```python
+import httpx
+
+client = httpx.Client(cert="<path to TLS certificate>")
+```
+
+Using OpenAPI client library
+```python
+import httpx
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="no_key",
+    base_url=”https://<endpoint url>/openai/v1”,
+    http_client=httpx.Client(cert="<path to TLS certificate>"),
+)
+```
