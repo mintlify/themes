@@ -83,10 +83,7 @@
               "group": "General Inference",
               "icon": "robot",
               "pages": [
-                "examples/general_inference/flux",
-                "examples/general_inference/gradio",
-                "examples/general_inference/streamlit",
-                "examples/general_inference/swift"
+                "examples/general_inference/flux"
               ]
             }
             
