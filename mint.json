@@ -59,6 +59,31 @@
         "resources/private",
         "resources/pricing"
       ]
+    },
+    {
+      "group": "Examples",
+      "pages": [
+        
+        {
+          "group": "Codex",
+          "icon": "code",
+          "pages": [
+            "examples/codex",
+            {
+              "group": "Chat Apps",
+              "icon": "comments",
+              "pages": [
+                "examples/chat_apps/bash",
+                "examples/chat_apps/gradio",
+                "examples/chat_apps/streamlit",
+                "examples/chat_apps/swift"
+              ]
+            }
+            
+            
+          ]
+        }
+      ]
     }
   ],
   "footerSocials": {
