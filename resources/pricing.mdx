@@ -3,6 +3,22 @@ title: 'Pricing'
 icon: 'coins'
 ---
 
-The CentML platform operates on a credit-based billing system, where 1 CentML credit equals 1 USD. You can buy credits through the Platform by going to Account -> Wallet. Pricing details for both serverless and dedicated deployments can be found in the [console](https://app.centml.com).
+The CentML platform operates on a credit-based billing system, where 1 CentML credit equals 1 USD. You can buy credits through the Platform by going to Account -> Wallet.
 
-**Serverless endpoint** usage is billed according to the total number of tokens generated and processed, while **dedicated deployments** are charged based on the duration of hardware usage, utilizing a per-minute billing system.
+## Serverless endpoint
+Serverless endpoint usage is billed according to the total number of tokens generated and processed.
+
+|Model| Credits per million tokens |
+|--|:-----:|
+| meta-llama/Llama-3.1-405B-Instruct-FP8 | 2.50 |
+
+
+## Dedicated deployments
+Dedicated deployments are charged based on the type and duration of hardware used, following a per-minute billing system.
+
+|GPU| Credits per GPU per hour |
+|--|  :-----:  |
+| Nvidia L4 24GB | 0.30 |
+| Nvidia A10G 24GB | 0.30 |
+| Nvidia A100 40GB | 1.10 |
+| Nvidia H100 80GB | 2.50 |
