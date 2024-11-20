@@ -1,10 +1,10 @@
-# Mintlify Themes
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/cef3ad5b-335a-43ab-82ae-90844eddf671">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/b5cc5c07-cfb4-45b8-b6e2-4a8290c37db4">
   <img alt="Mintlify Themes" src="https://github.com/user-attachments/assets/cef3ad5b-335a-43ab-82ae-90844eddf671">
 </picture>
+
+# Mintlify Themes
 
 ## What Themes are
 
