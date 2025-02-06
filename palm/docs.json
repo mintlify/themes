@@ -1,0 +1,129 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "palm",
+  "name": "Palm Starter Kit",
+  "colors": {
+    "primary": "#329100",
+    "light": "#43C200",
+    "dark": "#329100"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "welcome",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://www.linkedin.com/company/mintsearch"
+    },
+    "links": [
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Customers",
+            "href": "https://mintlify.com/customers"
+          },
+          {
+            "label": "Enterprise",
+            "href": "https://mintlify.com/enterprise"
+          },
+          {
+            "label": "Request Preview",
+            "href": "https://mintlify.com/preview"
+          },
+          {
+            "label": "Integrations",
+            "href": "https://mintlify.com/docs/integrations/analytics/overview"
+          },
+          {
+            "label": "Templates",
+            "href": "https://github.com/mintlify/themes"
+          },
+          {
+            "label": "Wall of Love",
+            "href": "https://mintlify.com/love"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "Careers",
+            "href": "https://mintlify.com/careers"
+          },
+          {
+            "label": "Blog",
+            "href": "https://mintlify.com/blog"
+          },
+          {
+            "label": "Public Roadmap",
+            "href": "https://feedback.mintlify.com/roadmap"
+          },
+          {
+            "label": "Security",
+            "href": "https://mintlify.com/security/responsible-disclosure"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Privacy Policy",
+            "href": "https://mintlify.com/legal/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "https://mintlify.com/legal/terms"
+          }
+        ]
+      }
+    ]
+  }
+}
