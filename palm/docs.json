@@ -12,38 +12,65 @@
     "languages": [
       {
         "language": "en",
-        "groups": [
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "welcome",
-              "quickstart",
-              "development"
+            "tab": "Get Started",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "welcome",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Essentials",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/settings",
+                  "essentials/navigation",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "API Documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint Examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete"
+                ]
+              }
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+            "tab": "Development",
+            "groups": [
+              {
+                "group": "Development",
+                "pages": [
+                  "development"
+                ]
+              }
             ]
           },
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+            "tab": "Components",
+            "groups": [
+              {
+                "group": "Components",
+                "pages": [
+                  "essentials/markdown"
+                ]
+              }
             ]
           }
         ]
