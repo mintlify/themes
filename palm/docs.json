@@ -34,9 +34,14 @@
                   "essentials/navigation",
                   "essentials/reusable-snippets"
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "tab": "API Reference",
+            "groups": [
               {
-                "group": "API Documentation",
+                "group": "API Reference",
                 "pages": [
                   "api-reference/introduction"
                 ]
@@ -47,28 +52,6 @@
                   "api-reference/endpoint/get",
                   "api-reference/endpoint/create",
                   "api-reference/endpoint/delete"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Development",
-            "groups": [
-              {
-                "group": "Development",
-                "pages": [
-                  "development"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Components",
-            "groups": [
-              {
-                "group": "Components",
-                "pages": [
-                  "essentials/markdown"
                 ]
               }
             ]
