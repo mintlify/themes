@@ -8,52 +8,54 @@
     "dark": "#006AD4"
   },
   "favicon": "favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
   "navigation": {
-    "languages": [
+    "tabs": [
       {
-        "language": "en",
-        "tabs": [
+        "tab": "Get Started",
+        "groups": [
           {
-            "tab": "Get Started",
-            "groups": [
-              {
-                "group": "Get Started",
-                "pages": [
-                  "welcome",
-                  "quickstart",
-                  "development"
-                ]
-              },
-              {
-                "group": "Essentials",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/settings",
-                  "essentials/navigation",
-                  "essentials/reusable-snippets"
-                ]
-              }
+            "group": "Get Started",
+            "pages": [
+              "welcome",
+              "quickstart",
+              "development"
             ]
           },
           {
-            "tab": "API Reference",
-            "groups": [
-              {
-                "group": "API Reference",
-                "pages": [
-                  "api-reference/introduction"
-                ]
-              },
-              {
-                "group": "Endpoint Examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete"
-                ]
-              }
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete"
             ]
           }
         ]
