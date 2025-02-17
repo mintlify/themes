@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
-  "name": "Palm Starter Kit",
+  "theme": "willow",
+  "name": "Willow Starter Kit",
   "colors": {
-    "primary": "#329100",
-    "light": "#43C200",
-    "dark": "#329100"
+    "primary": "#006AD4",
+    "light": "#007FFF",
+    "dark": "#006AD4"
   },
-  "favicon": "favicon.png",
+  "favicon": "favicon.svg",
   "navigation": {
     "languages": [
       {
