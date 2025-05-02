@@ -1,0 +1,88 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Almond Starter Kit",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "colors": {
+    "primary": "#009689",
+    "light": "#00BBA7",
+    "dark": "#009689"
+  },
+  "favicon": "favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Sign up",
+      "href": "https://mintlify.com/start"
+    },
+    "links": [
+      {
+        "label": "Login",
+        "href": "https://mintlify.com/login"
+      }
+    ]
+  },
+  "contextual": {
+    "options": [
+    "copy",
+    "chatgpt"
+    ]
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "welcome",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://www.linkedin.com/company/mintsearch"
+    }
+  }
+}
