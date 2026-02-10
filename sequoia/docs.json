@@ -82,8 +82,8 @@
     }
   },
   "logo": {
-    "light": "/images/sequoia-light.svg",
-    "dark": "/images/sequoia-dark.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
@@ -104,5 +104,18 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "contextual": {
+    "options": [
+      "assistant",
+      "copy",
+      "chatgpt",
+      "claude",
+      "cursor",
+      "vscode",
+      "perplexity",
+      "grok"
+    ],
+    "display": "toc"
   }
 }
