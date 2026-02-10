@@ -1,0 +1,9 @@
+export const Tags = ({ tags, className }) => {
+  return (
+    <div className={`mt-6 mb-8 flex flex-row flex-wrap gap-2 ${className}`}>
+      {tags.map((tag) => (
+        <span className="text-sm text-[#733E00] dark:text-yellow-500 bg-[#FFFCF1] dark:bg-yellow-500/10 font-semibold px-2 py-1 rounded-lg">{tag}</span>
+      ))}
+    </div>
+  )
+}
