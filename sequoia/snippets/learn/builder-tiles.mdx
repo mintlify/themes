@@ -1,0 +1,28 @@
+export const BuilderTiles = ({ img, href, title, description, bgColor }) => {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="group">
+      <div
+        className="flex flex-col gap-4 rounded-2xl p-6 h-[290px]"
+        style={{
+          background: bgColor
+        }}
+      >
+        <div className="w-full h-30 overflow-hidden rounded-xl">
+          <img
+            src={img}
+            className="w-full h-[100px] object-cover"
+            alt={title}
+          />
+        </div>
+        <div className="flex flex-col gap-3">
+          <h2 className="text-md font-semibold text-white dark:text-white group-hover:underline group-hover:decoration-blue-500 group-hover:underline-offset-4 transition-all mb-[-8px]">
+            {title}
+          </h2>
+          <p className="text-white dark:text-white text-sm font-medium">
+            {description}
+          </p>
+        </div>
+      </div>
+    </a>
+  );
+};
