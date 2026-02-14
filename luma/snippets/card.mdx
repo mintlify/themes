@@ -1,0 +1,25 @@
+export const IntroCard = ({ img, href, title, description }) => {
+  return (
+    <div className="bg-gray-950/[0.03] dark:bg-white/10 rounded-2xl flex justify-center items-center">
+      <a href={href} target="_blank" rel="noopener noreferrer" className="group w-full px-7 py-8">
+        <div className="flex flex-col gap-4 rounded-2xl">
+          <div className="w-full overflow-hidden rounded-2xl">
+            <img 
+              src={img} 
+              className="w-full my-0"
+              alt={title}
+            />
+          </div>
+          <div className="mt-4 flex flex-col gap-2">
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {title}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-md">
+              {description}
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  );
+};

@@ -1,0 +1,18 @@
+export const LearnButtons = ({ primary, secondaries }) => {
+  return (
+    <div className="flex flex-row gap-2 not-prose">
+      {primary && (
+        <a href={primary.href} className="flex items-center justify-center gap-2 bg-primary-dark dark:bg-primary-light dark:text-gray-900 text-white rounded-full px-4 py-1 hover:opacity-[0.9]">
+          <Icon icon={primary.icon} color="white" iconType="solid" />
+          <span className="font-semibold">{primary.title}</span>
+        </a>
+      )}
+      {secondaries && secondaries.map((secondary) => (
+        <a href={secondary.href} className="flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-white/5 dark:hover:bg-white/10 text-gray-800 dark:text-white rounded-full px-4 py-1 hover:opacity-[0.9]">
+          <Icon icon={secondary.icon} color="currentColor" iconType="solid" />
+          <span className="font-semibold">{secondary.title}</span>
+        </a>
+      ))}
+    </div>
+  )
+}

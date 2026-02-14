@@ -1,0 +1,189 @@
+---
+mode: "frame"
+title: "Aspen Documentation"
+sidebarTitle: "Home"
+description: "Explore our API & SDK references, demos, and guides for building intelligent applications."
+---
+
+import { Container, Title} from '/snippets/home/utility.mdx';
+import { ProductTiles } from '/snippets/home/product-tiles.mdx';
+import { appCategories } from '/snippets/home/data.mdx';
+import { ProductCard } from '/snippets/home/product-cards.mdx';
+
+<div className="px-5 divide-y divide-gray-100 dark:divide-white/10">
+  <Container>
+    <div className="w-full flex flex-col">
+      <div className="flex flex-col items-start justify-center w-full max-w-4xl text-left">
+        <div
+          className="text-gray-900 dark:text-gray-200 text-4xl tracking-tight"
+        >
+          Aspen Documentation
+        </div>
+        <p
+          className="text-md text-gray-600 dark:text-gray-400 text-left mt-3 mb-4"
+        >
+          Explore our API & SDK references, demos, and guides for building intelligent applications.
+        </p>
+        <div className="flex flex-row gap-4 mt-5">
+        <a href="/get-started/quickstart">
+          <button
+            type="button"
+            className="px-5 flex items-center font-medium text-sm rounded-full py-2 shadow-sm text-white dark:text-gray-900 bg-primary-dark dark:bg-primary-light hover:opacity-[0.9] hover:bg-primary justify-center"
+          >
+            Get started
+            <svg
+              className="size-3 ml-2 bg-white dark:bg-gray-900"
+              style={{
+                maskImage: 'url("https://mintlify.b-cdn.net/solid/arrow-right-long.svg")',
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center center'
+              }}
+            />
+          </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </Container>
+   <Container>
+    <div className="flex flex-col w-full mb-7">
+      <div className="flex items-center justify-between w-full">
+        <Title>
+          Build intelligent applications
+        </Title>
+      </div>
+      <p
+        className="text-[#5B616E] dark:text-gray-300 text-md mb-1 mt-3"
+      >
+        See our demo apps and tutorials to jumpstart your intelligent application within minutes.
+      </p>
+    </div>
+    <div className="dark:hidden block">
+    <CardGroup cols={3}>
+        <ProductCard
+        title="AI Model Deployment Guide"
+        description="Effortless AI Model Deployment: Launch GPT-4 & Custom Models"
+        href="https://youtu.be/EPdHV_Ex0XY"
+        img="https://mintlify-assets.b-cdn.net/aspen-ai.svg"
+        model="GPT-01"
+        type="Model API"
+        />
+        <ProductCard
+          title="Conversational AI Demo"
+          description="Enable users to integrate advanced chatbots into their applications"
+          href="https://youtu.be/vqKhGq3kshg"
+          img="https://mintlify-assets.b-cdn.net/aspen-chat.svg"
+          model="Neural Engine"
+          type="Model API"
+        />
+          <ProductCard
+          title="Reinforcement Learning Platform"
+          description="A comprehensive AI training environment for reinforcement learning"
+          href="https://youtu.be/NM-dutlwRFc"
+          img="https://mintlify-assets.b-cdn.net/aspen-connect.svg"
+          model="AI"
+          type="Model API"
+        />
+    </CardGroup>
+    </div>
+    <div className="dark:block hidden">
+    <CardGroup cols={3}>
+        <ProductCard
+        title="AI Model Deployment Guide"
+        description="Effortless AI Model Deployment: Launch GPT-4 & Custom Models"
+        href="https://youtu.be/EPdHV_Ex0XY"
+        img="https://mintlify-assets.b-cdn.net/aspen-dark-ai.svg"
+        model="GPT-01"
+        type="Model API"
+        />
+        <ProductCard
+          title="Conversational AI Demo"
+          description="Enable users to integrate advanced chatbots into their applications"
+          href="https://youtu.be/vqKhGq3kshg"
+          img="https://mintlify-assets.b-cdn.net/aspen-dark-chat.svg"
+          model="Neural Engine"
+          type="Model API"
+        />
+          <ProductCard
+          title="Reinforcement Learning Platform"
+          description="A comprehensive AI training environment for reinforcement learning"
+          href="https://youtu.be/NM-dutlwRFc"
+          img="https://mintlify-assets.b-cdn.net/aspen-dark-connect.svg"
+          model="AI"
+          type="Model API"
+        />
+    </CardGroup>
+    </div>
+  </Container>
+  <Container>
+    <div className="flex flex-col w-full mb-8">
+      <div className="flex items-center justify-between w-full">
+        <Title>
+          Build AI Applications
+        </Title>
+      </div>
+      <p
+        className="text-[#5B616E] dark:text-gray-300 text-md mb-1 mt-3"
+      >
+        Use AspenAI's backend and frontend suites of AI services to build intelligent applications.
+      </p>
+    </div>
+    <ProductTiles categories={appCategories} />
+  </Container>
+  
+
+  <Container>
+    <div className="flex flex-col w-full mb-5">
+    <Title>
+      Resources
+    </Title>
+
+  </div>
+  <Columns cols={3}>
+    <Card
+      title="We're hiring!"
+      icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12.0001" r="12" fill="#D69900"/>
+      <path d="M19.3691 17.2019H14.6436C14.7703 16.7602 14.8428 16.2795 14.8428 15.7761C14.8426 13.6237 13.5699 11.8787 12 11.8787C10.4301 11.8787 9.15742 13.6237 9.15723 15.7761C9.15723 16.2795 9.22973 16.7602 9.35645 17.2019H4.63086L12 4.43823L19.3691 17.2019Z" fill="white"/>
+      </svg>}
+      href="https://mintlify.com/careers#open-roles"
+    >
+    Help build the AI tools to bring intelligence to every application
+    </Card>
+    <Card
+      title="Join our AI Community"
+      icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_4125_5937)">
+        <path d="M20.3302 4.26678C18.7563 3.53035 17.0912 3.00708 15.3789 2.71082C15.1656 3.09641 14.9165 3.61503 14.7446 4.02763C12.8985 3.75003 11.0693 3.75003 9.25715 4.02763C9.0854 3.61513 8.83059 3.09641 8.61534 2.71082C6.90139 3.00722 5.23486 3.53182 3.66018 4.27063C0.526681 9.00585 -0.322788 13.6233 0.1019 18.1754C2.18024 19.7275 4.19437 20.6703 6.17456 21.2873C6.66668 20.6105 7.10171 19.894 7.47515 19.1452C6.76417 18.8745 6.07877 18.5409 5.42709 18.1484C5.59858 18.0213 5.76604 17.8889 5.92921 17.7512C9.87815 19.5983 14.1689 19.5983 18.0708 17.7512C18.2347 17.8879 18.4021 18.0204 18.5728 18.1484C17.9201 18.542 17.2334 18.8762 16.521 19.1472C16.8966 19.899 17.3308 20.6162 17.8216 21.2892C19.8036 20.6723 21.8196 19.7294 23.898 18.1754C24.3964 12.8984 23.0467 8.32335 20.3302 4.26678ZM8.01318 15.376C6.82771 15.376 5.85553 14.2693 5.85553 12.9216C5.85553 11.5739 6.80699 10.4653 8.01318 10.4653C9.21946 10.4653 10.1916 11.572 10.1708 12.9216C10.1727 14.2693 9.21946 15.376 8.01318 15.376ZM15.9867 15.376C14.8012 15.376 13.8291 14.2693 13.8291 12.9216C13.8291 11.5739 14.7805 10.4653 15.9867 10.4653C17.193 10.4653 18.1651 11.572 18.1444 12.9216C18.1444 14.2693 17.193 15.376 15.9867 15.376Z" fill="#D69900"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_4125_5937">
+        <rect width="24" height="24" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>}
+      href="#"
+    >
+    Get help with your AI projects and meet fellow developers
+    </Card>
+    <Card
+      title="AspenAI Discord Events"
+      icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.6665 4.66667C7.1145 4.66667 6.6665 4.21867 6.6665 3.66667V1C6.6665 0.448 7.1145 0 7.6665 0C8.2185 0 8.6665 0.448 8.6665 1V3.66667C8.6665 4.21867 8.2185 4.66667 7.6665 4.66667Z" fill="#D69900"/>
+        <path d="M16.3335 4.66667C15.7815 4.66667 15.3335 4.21867 15.3335 3.66667V1C15.3335 0.448 15.7815 0 16.3335 0C16.8855 0 17.3335 0.448 17.3335 1V3.66667C17.3335 4.21867 16.8855 4.66667 16.3335 4.66667Z" fill="#D69900"/>
+        <path d="M18.3333 2.66663H5.66667C3.644 2.66663 2 4.31063 2 6.33329V17.6666C2 19.6893 3.644 21.3333 5.66667 21.3333H18.3333C20.356 21.3333 22 19.6893 22 17.6666V6.33329C22 4.31063 20.356 2.66663 18.3333 2.66663ZM18.3333 19.3333H5.66667C4.748 19.3333 4 18.5853 4 17.6666V9.33329H20V17.6666C20 18.5853 19.252 19.3333 18.3333 19.3333Z" fill="#D69900"/>
+        <path d="M11.9998 11C11.2652 11 10.6665 11.5987 10.6665 12.3333C10.6665 13.068 11.2652 13.6667 11.9998 13.6667C12.7345 13.6667 13.3332 13.068 13.3332 12.3333C13.3332 11.5987 12.7345 11 11.9998 11Z" fill="#D69900"/>
+        <path d="M16.6668 13.6667C17.4015 13.6667 18.0002 13.068 18.0002 12.3333C18.0002 11.5987 17.4015 11 16.6668 11C15.9322 11 15.3335 11.5987 15.3335 12.3333C15.3335 13.068 15.9322 13.6667 16.6668 13.6667Z" fill="#D69900"/>
+        <path d="M11.9998 15C11.2652 15 10.6665 15.5987 10.6665 16.3333C10.6665 17.068 11.2652 17.6667 11.9998 17.6667C12.7345 17.6667 13.3332 17.068 13.3332 16.3333C13.3332 15.5987 12.7345 15 11.9998 15Z" fill="#D69900"/>
+        <path d="M7.33333 15C6.59867 15 6 15.5987 6 16.3333C6 17.068 6.59867 17.6667 7.33333 17.6667C8.068 17.6667 8.66667 17.068 8.66667 16.3333C8.66667 15.5987 8.068 15 7.33333 15Z" fill="#D69900"/>
+        <path d="M16.6668 15C15.9322 15 15.3335 15.5987 15.3335 16.3333C15.3335 17.068 15.9322 17.6667 16.6668 17.6667C17.4015 17.6667 18.0002 17.068 18.0002 16.3333C18.0002 15.5987 17.4015 15 16.6668 15Z" fill="#D69900"/>
+        </svg>}
+      href="#"
+    >
+    View our upcoming AI Developer Platform events
+    </Card>
+  </Columns>
+  </Container>
+</div>
+
