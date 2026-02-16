@@ -76,7 +76,7 @@
           },
           {
             "item": "Community",
-            "icon": "comments",
+            "icon": "user-group",
             "description": "Join the conversation",
             "href": "https://mintlify.com/community"
           }
