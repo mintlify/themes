@@ -57,6 +57,30 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Resources",
+        "icon": "book-open",
+        "menu": [
+          {
+            "item": "Changelog",
+            "icon": "list-timeline",
+            "description": "Latest updates and releases",
+            "href": "https://mintlify.com/changelog"
+          },
+          {
+            "item": "Blog",
+            "icon": "newspaper",
+            "description": "Articles and tutorials",
+            "href": "https://mintlify.com/blog"
+          },
+          {
+            "item": "Community",
+            "icon": "comments",
+            "description": "Join the conversation",
+            "href": "https://mintlify.com/community"
+          }
+        ]
       }
     ],
     "global": {
