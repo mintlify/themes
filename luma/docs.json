@@ -3,9 +3,9 @@
   "theme": "luma",
   "name": "Luma Docs",
   "colors": {
-    "primary": "#FF7819",
-    "light": "#FF9038",
-    "dark": "#FF7819"
+    "primary": "#ff7819",
+    "light": "#ff9038",
+    "dark": "#ff7819"
   },
   "appearance": {
     "default": "light"
@@ -17,7 +17,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "GETTING STARTED",
+            "group": "Getting Started",
             "icon": "https://mintlify-assets.b-cdn.net/compass-2.svg",
             "pages": [
               "index",
@@ -26,7 +26,7 @@
             ]
           },
           {
-            "group": "ESSENTIALS",
+            "group": "Essentials",
             "icon": "https://mintlify-assets.b-cdn.net/star-2.svg",
             "pages": [
               "essentials/markdown",
