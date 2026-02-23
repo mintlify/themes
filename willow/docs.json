@@ -20,7 +20,7 @@
     }
   },
   "banner": {
-    "content": "The Willow theme is changing! Preview the new Willow theme [here](https://new-willow.mintlify.app), all Willow projects will be updated to the new theme on March 23, 2026.",
+    "content": "The Willow theme is changing! Preview it [here](https://new-willow.mintlify.app). All Willow projects will be updated to the new theme on March 23, 2026.",
     "dismissible": false
   },
   "navigation": {
