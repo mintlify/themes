@@ -19,10 +19,6 @@
       "href": "https://dashboard.mintlify.com"
     }
   },
-  "banner": {
-    "content": "The Willow theme is changing! Preview the new Willow theme [here](https://mintlify.com/themes/new-willow)",
-    "dismissible": false
-  },
   "navigation": {
     "tabs": [
       {
