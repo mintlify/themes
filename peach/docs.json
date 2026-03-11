@@ -13,7 +13,7 @@
       {
         "group": "Getting Started",
         "icon": "rocket",
-        "root": "getting-started",
+        "root": "getting-started/index",
         "pages": [
           "getting-started/quick-setup",
           "getting-started/first-project",
@@ -23,14 +23,14 @@
       {
         "group": "Billing & Plans",
         "icon": "credit-card",
-        "root": "billing",
+        "root": "billing/index",
         "pages": [
           "billing/change-plan",
           "billing/invoices",
           {
             "group": "Payment Methods",
             "icon": "wallet",
-            "root": "billing/payment",
+            "root": "billing/payment/index",
             "pages": [
               "billing/payment/add-card",
               "billing/payment/bank-transfer"
@@ -41,7 +41,7 @@
       {
         "group": "Integrations",
         "icon": "plug",
-        "root": "integrations",
+        "root": "integrations/index",
         "pages": [
           "integrations/slack",
           "integrations/github"
