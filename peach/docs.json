@@ -1,0 +1,75 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "peach",
+  "name": "Acme Help Center",
+  "colors": {
+    "primary": "#E85D3A",
+    "light": "#E85D3A",
+    "dark": "#E85D3A"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "icon": "rocket",
+        "root": "getting-started",
+        "pages": [
+          "getting-started/quick-setup",
+          "getting-started/first-project",
+          "getting-started/invite-team"
+        ]
+      },
+      {
+        "group": "Billing & Plans",
+        "icon": "credit-card",
+        "root": "billing",
+        "pages": [
+          "billing/change-plan",
+          "billing/invoices",
+          {
+            "group": "Payment Methods",
+            "icon": "wallet",
+            "root": "billing/payment",
+            "pages": [
+              "billing/payment/add-card",
+              "billing/payment/bank-transfer"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "root": "integrations",
+        "pages": [
+          "integrations/slack",
+          "integrations/github"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@acme.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.acme.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/acme",
+      "github": "https://github.com/acme"
+    }
+  }
+}
