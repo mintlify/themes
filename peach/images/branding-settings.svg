@@ -1,0 +1,20 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" rx="24" fill="#FFF7F2"/>
+  <rect x="40" y="40" width="880" height="460" rx="20" fill="white" stroke="#F2C4B7"/>
+  <rect x="72" y="92" width="260" height="152" rx="16" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="364" y="92" width="524" height="152" rx="16" fill="#FFFDFB" stroke="#F2C4B7"/>
+  <rect x="72" y="276" width="816" height="180" rx="16" fill="#FFFDFB" stroke="#F2C4B7"/>
+  <circle cx="120" cy="140" r="24" fill="#E85D3A"/>
+  <circle cx="176" cy="140" r="24" fill="#F18B71"/>
+  <circle cx="232" cy="140" r="24" fill="#8B3A23"/>
+  <rect x="104" y="192" width="144" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="396" y="126" width="160" height="18" rx="9" fill="#E85D3A"/>
+  <rect x="396" y="162" width="220" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="396" y="188" width="188" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="104" y="316" width="220" height="72" rx="12" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="356" y="316" width="220" height="72" rx="12" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="608" y="316" width="220" height="72" rx="12" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <text x="76" y="80" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Theme colors</text>
+  <text x="368" y="80" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Logo and favicon</text>
+  <text x="76" y="264" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Site metadata</text>
+</svg>
