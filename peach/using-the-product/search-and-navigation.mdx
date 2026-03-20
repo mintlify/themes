@@ -1,0 +1,36 @@
+---
+title: "Search and navigation"
+description: "Keep articles discoverable by organizing categories clearly and understanding how search responds to changes."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Good search starts with good information architecture. Clear page titles, category roots, and descriptive summaries make both browsing and search more effective.
+
+## Make pages easier to discover
+
+- Use specific page titles instead of broad labels like `Overview`
+- Add short, useful descriptions to important pages
+- Group related articles under category roots that users already understand
+- Cross-link articles that answer adjacent questions
+
+<AccordionGroup>
+  <Accordion title="Why is a page missing from navigation?">
+    The file may exist, but it will not appear until it is referenced in `docs.json` and placed in
+    the correct group or subgroup.
+  </Accordion>
+  <Accordion title="Why is search still showing an old title?">
+    Search results may take time to refresh after you rename or move a page. Confirm the latest
+    version is published before you assume indexing is stuck.
+  </Accordion>
+  <Accordion title="When should a page be hidden?">
+    Hide pages only when you intentionally want them excluded from navigation. Avoid using hidden
+    pages as a substitute for a cleaner information architecture.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+  If users repeatedly search for the same term and still fail to find the right article, that is a
+  signal to rename the page, add aliases in the copy, or move it into a clearer category.
+</Info>

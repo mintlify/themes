@@ -1,0 +1,33 @@
+---
+title: "Build failures"
+description: "Work through the most common reasons a docs build fails before a change reaches production."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Build failures usually come down to invalid configuration, broken content references, or syntax errors in MDX.
+
+<AccordionGroup>
+  <Accordion title="Invalid docs.json">
+    Confirm the JSON is valid and every navigation group has the fields required by the current
+    theme, especially `root` for Help Center groups.
+  </Accordion>
+  <Accordion title="Missing files or wrong paths">
+    If `docs.json` points at a page that does not exist, the build can fail or the navigation can
+    resolve incorrectly. Double-check file names and folder paths.
+  </Accordion>
+  <Accordion title="Broken MDX syntax">
+    Unclosed tags, malformed frontmatter, or unsupported JSX patterns can prevent pages from
+    compiling. Start with the newest edited page.
+  </Accordion>
+  <Accordion title="Asset reference problems">
+    Missing local images, imported snippets, or components can also break the build. Make sure every
+    referenced asset exists at the expected path.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  Fix one problem at a time. Re-running the build after a focused change is faster than making many
+  speculative edits at once.
+</Warning>

@@ -1,0 +1,34 @@
+---
+title: "Login & SSO"
+description: "Set up sign-in rules that are easy for employees to use and straightforward for admins to enforce."
+author:
+  name: "Jordan Lee"
+createdDate: "2026-03-10"
+---
+
+<Badge color="purple" size="sm">Enterprise</Badge>
+
+Single sign-on helps teams centralize access, enforce offboarding, and reduce ad hoc password management.
+
+<Steps>
+  <Step title="Choose the identity provider">
+    Confirm which identity provider will own the user lifecycle and what attributes must be passed
+    during sign-in.
+  </Step>
+  <Step title="Configure the SSO connection">
+    Add the provider details in your security settings and verify the callback values before you
+    save the configuration.
+  </Step>
+  <Step title="Test with a small admin group">
+    Validate sign-in with a limited set of internal users before you enforce SSO for everyone.
+  </Step>
+  <Step title="Roll out gradually">
+    Communicate the change to teammates, document the new login flow, and keep a fallback admin path
+    available until the rollout is stable.
+  </Step>
+</Steps>
+
+<Note>
+  If your team uses SCIM or automated user provisioning, make sure the expected roles and group
+  mappings are agreed on before you enable sign-in enforcement.
+</Note>

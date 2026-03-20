@@ -1,0 +1,28 @@
+---
+title: "Deployment delays"
+description: "Understand what to check when content changes or preview deployments take longer than expected."
+author:
+  name: "Jordan Lee"
+createdDate: "2026-03-10"
+---
+
+Most deployment delays come from queue time, upstream repository events, or a build that is retrying after failure.
+
+<Steps>
+  <Step title="Check whether the change actually triggered a build">
+    Confirm the repository event, editor publish action, or manual deployment action was recorded.
+  </Step>
+  <Step title="Look for a failed or queued build">
+    If a build is still queued, wait for capacity to clear. If it failed, fix the root issue before
+    you retry.
+  </Step>
+  <Step title="Compare preview and production behavior">
+    A preview delay and a production delay do not always share the same cause. Check both before you
+    assume the issue is global.
+  </Step>
+</Steps>
+
+<Info>
+  When you contact support, include the repository, branch, and approximate time of the expected
+  deployment. That makes it much easier to trace the event.
+</Info>

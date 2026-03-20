@@ -1,0 +1,29 @@
+---
+title: "API tokens"
+description: "Create and manage tokens safely for integrations, automation, and internal tooling."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+API tokens let external systems authenticate without using a full interactive sign-in flow.
+
+<Warning>
+  Treat tokens like passwords. Store them in a secrets manager, avoid committing them to Git, and
+  rotate them when a team member or integration no longer needs access.
+</Warning>
+
+<Tabs sync={false} borderBottom>
+  <Tab title="Dashboard">
+    Use the dashboard when you want to generate a token manually, confirm who created it, and rotate
+    it later from a single place.
+  </Tab>
+  <Tab title="Automation">
+    Use a token in CI, internal scripts, or service-to-service workflows where a human sign-in is
+    not practical.
+  </Tab>
+  <Tab title="Security review">
+    Review token ownership, scope, and last-known usage regularly so stale credentials do not remain
+    active indefinitely.
+  </Tab>
+</Tabs>

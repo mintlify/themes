@@ -1,0 +1,35 @@
+---
+title: "Projects and environments"
+description: "Understand the difference between local preview, branch previews, and production publishing."
+author:
+  name: "Jordan Lee"
+createdDate: "2026-03-10"
+---
+
+Most teams work in three environments: local preview for fast iteration, branch previews for review, and production for live documentation.
+
+<Tabs sync={false} borderBottom>
+  <Tab title="Local preview">
+    Use local preview when you are still shaping content, navigation, or component usage. It is the
+    fastest feedback loop and the safest place to test large restructuring changes.
+  </Tab>
+  <Tab title="Preview deployments">
+    Use preview deployments for peer review. They are ideal for checking search behavior, layout
+    changes, redirects, and pages that depend on real repository workflows.
+  </Tab>
+  <Tab title="Production">
+    Production is the source your users see. Keep it stable, searchable, and easy to navigate.
+    Publish to production only after the content and navigation have been reviewed in a preview.
+  </Tab>
+</Tabs>
+
+## Good defaults for small teams
+
+- Use local preview while writing
+- Use pull requests or branch previews for review
+- Publish to production from the default branch
+
+<Tip>
+  If your team is small, keep the workflow simple first. You can always add more approvals,
+  environments, and automation later.
+</Tip>
