@@ -1,0 +1,34 @@
+---
+title: "Webhooks"
+description: "Receive change events from Mintlify and hand them off to internal automation or support tooling."
+authors:
+  - name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Webhooks are useful when another system needs to react to publishing events, feedback submissions, or operational changes without polling constantly.
+
+## What a webhook event usually includes
+
+```json
+{
+  "event": "page.published",
+  "site": "mintlify-help-center",
+  "path": "/getting-started/quick-setup",
+  "timestamp": "2026-03-10T18:42:00Z"
+}
+```
+
+<AccordionGroup>
+  <Accordion title="How should we verify incoming requests?">
+    Validate the webhook signature and reject requests that do not match the signing secret stored
+    in your environment.
+  </Accordion>
+  <Accordion title="What if our endpoint is temporarily unavailable?">
+    Capture the delivery in your logs and make sure your endpoint can handle retries idempotently.
+  </Accordion>
+  <Accordion title="What are good first webhook use cases?">
+    Start with notifications, internal dashboards, or analytics workflows before moving into
+    production-critical automations.
+  </Accordion>
+</AccordionGroup>

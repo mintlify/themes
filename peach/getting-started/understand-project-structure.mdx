@@ -1,0 +1,44 @@
+---
+title: "Understand the project structure"
+description: "See how docs.json, category folders, assets, and article pages fit together in a typical Mintlify site."
+authors:
+  - name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Mintlify sites are easiest to maintain when your folders mirror the way users browse the site.
+
+The most important file is <Tooltip headline="docs.json" tip="The config file that defines navigation, branding, colors, and many site-level behaviors.">`docs.json`</Tooltip>. It tells Mintlify how pages should be grouped and which category roots are visitable.
+
+## Example structure
+
+<Tree>
+  <Tree.File name="docs.json" />
+  <Tree.File name="index.mdx" />
+  <Tree.Folder name="getting-started" defaultOpen>
+    <Tree.File name="index.mdx" />
+    <Tree.File name="quick-setup.mdx" />
+    <Tree.File name="first-project.mdx" />
+  </Tree.Folder>
+  <Tree.Folder name="billing" defaultOpen>
+    <Tree.File name="index.mdx" />
+    <Tree.File name="invoices.mdx" />
+    <Tree.Folder name="payment" defaultOpen>
+      <Tree.File name="index.mdx" />
+      <Tree.File name="add-card.mdx" />
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+## How the pieces fit together
+
+- `index.mdx` at the site root becomes the homepage
+- category folders usually include their own `index.mdx` root pages
+- article files live alongside the category they belong to
+- assets such as logos and screenshots live in shared folders like `/logo` or `/images`
+
+<Info>
+  In Help Center themes, category root pages are especially important because they act as visitable
+  directories. Even if the page body is short, the page can still present the child articles and
+  nested categories automatically.
+</Info>
