@@ -1,0 +1,20 @@
+---
+title: "Rate limits"
+description: "Design automation workflows that stay reliable even when request throughput is constrained."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Rate limits protect the platform and keep one noisy integration from affecting everyone else.
+
+## Good practices
+
+- batch work when possible instead of making one request per small change
+- retry with backoff instead of immediately retrying failures
+- log request volume so you can see when your automation patterns change
+
+<Tip>
+  If an integration starts hitting limits unexpectedly, inspect whether the workflow is polling too
+  frequently or re-running the same requests after soft failures.
+</Tip>

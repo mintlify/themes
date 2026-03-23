@@ -1,0 +1,77 @@
+---
+title: "Quick Setup"
+description: "Launch a new Mintlify site from GitHub, GitLab, or a local folder in a few guided steps."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+<Note>
+  Quick setup is the fastest path when you already have a repository or a folder of Markdown and
+  MDX files ready to organize.
+</Note>
+
+<Tabs sync={false} borderBottom>
+  <Tab title="GitHub">
+    <Steps>
+      <Step title="Create a new docs project">
+        In the dashboard, create a new project and choose **Import from GitHub**.
+      </Step>
+      <Step title="Authorize repository access">
+        Select the repository that will store your docs. Mintlify reads the content, builds preview
+        deployments, and opens pull requests from the editor when needed.
+      </Step>
+      <Step title="Confirm your content root">
+        Point Mintlify at the folder that contains your `docs.json` and content files. If you are
+        starting from scratch, choose the starter layout and customize it after import.
+      </Step>
+      <Step title="Review the generated navigation">
+        Open the site preview and confirm that the homepage, categories, and article order match the
+        structure you expect.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="GitLab">
+    <Steps>
+      <Step title="Create a new docs project">
+        Start a new project and choose **Import from GitLab**.
+      </Step>
+      <Step title="Grant access to the correct group or repository">
+        Make sure the account you connect can read the branch that stores your content.
+      </Step>
+      <Step title="Choose the branch to publish from">
+        Use your default branch for production and let Mintlify create previews for merge requests.
+      </Step>
+      <Step title="Validate the imported structure">
+        Check page titles, descriptions, and any nested groups before publishing.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Local preview">
+    <Steps>
+      <Step title="Install the CLI">
+        ```bash
+        npm install -g mint
+        ```
+      </Step>
+      <Step title="Open your docs directory">
+        Move into the folder that contains `docs.json` and your MDX files.
+      </Step>
+      <Step title="Run a local preview">
+        ```bash
+        mint dev
+        ```
+      </Step>
+      <Step title="Iterate before you connect a repository">
+        Use local preview to test navigation, search behavior, and page formatting before you wire
+        the site into your production workflow.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## What to do next
+
+- Continue to [Create your first site](/getting-started/first-project) to publish a production-ready structure.
+- Read [Understand the project structure](/getting-started/understand-project-structure) if you want to know how `docs.json`, folders, and category pages work together.
+- If you are moving from another platform, use [Migrate existing docs](/getting-started/migrate-existing-docs) before you finalize redirects.

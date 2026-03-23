@@ -1,0 +1,23 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" rx="24" fill="#FFF7F2"/>
+  <rect x="32" y="32" width="896" height="476" rx="20" fill="white" stroke="#F2C4B7"/>
+  <rect x="56" y="72" width="180" height="396" rx="16" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="268" y="72" width="424" height="396" rx="16" fill="#FFFDFB" stroke="#F2C4B7"/>
+  <rect x="724" y="72" width="180" height="396" rx="16" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="56" y="48" width="848" height="12" rx="6" fill="#F8DED6"/>
+  <rect x="80" y="104" width="110" height="14" rx="7" fill="#E85D3A"/>
+  <rect x="80" y="136" width="120" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="80" y="162" width="96" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="80" y="188" width="128" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="292" y="104" width="190" height="18" rx="9" fill="#E85D3A"/>
+  <rect x="292" y="142" width="340" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="292" y="168" width="320" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="292" y="210" width="376" height="86" rx="12" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="292" y="320" width="376" height="96" rx="12" fill="#FFF1EB" stroke="#F2C4B7"/>
+  <rect x="748" y="104" width="110" height="14" rx="7" fill="#E85D3A"/>
+  <rect x="748" y="136" width="120" height="10" rx="5" fill="#F2C4B7"/>
+  <rect x="748" y="164" width="104" height="10" rx="5" fill="#F2C4B7"/>
+  <text x="84" y="96" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Navigation</text>
+  <text x="296" y="96" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Editor</text>
+  <text x="752" y="96" fill="#8B3A23" font-size="16" font-family="Arial, sans-serif">Preview actions</text>
+</svg>

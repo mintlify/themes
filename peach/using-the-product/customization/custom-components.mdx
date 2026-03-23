@@ -1,0 +1,33 @@
+---
+title: "Custom components"
+description: "Decide when a built-in Mintlify component is enough and when a custom React component is worth the maintenance cost."
+author:
+  name: "Maya Patel"
+createdDate: "2026-03-10"
+---
+
+Most support articles can be built with Mintlify-native MDX components. Reach for a custom component only when the built-in patterns cannot express the experience you need.
+
+<Tabs sync={false} borderBottom>
+  <Tab title="Built-in first">
+    Start with built-in components such as `Steps`, `Accordion`, `Callout`, `Card`, and `Tabs`.
+    They are easier to maintain, easier for teammates to reuse, and already match the surrounding
+    site styles.
+  </Tab>
+  <Tab title="Custom React component">
+    Use a custom component when you need deeply product-specific UI, dynamic rendering, or a richer
+    interaction than MDX alone can provide.
+  </Tab>
+</Tabs>
+
+<Warning>
+  Every custom component adds maintenance cost. Confirm that the design pattern is stable before you
+  turn it into a reusable building block.
+</Warning>
+
+## Good candidates for a custom component
+
+- reusable onboarding checklists
+- product-specific comparison tables
+- custom embeds that need live data or authenticated state
+- branded content modules used across many articles

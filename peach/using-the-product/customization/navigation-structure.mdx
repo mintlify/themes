@@ -1,0 +1,46 @@
+---
+title: "Navigation structure"
+description: "Design a category tree that matches how users search for answers instead of how your team names internal workstreams."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+Navigation should feel obvious to the person asking the question, not just to the team maintaining the docs.
+
+## A simple help-center pattern
+
+<Tree>
+  <Tree.Folder name="getting-started" defaultOpen>
+    <Tree.File name="index.mdx" />
+    <Tree.File name="quick-setup.mdx" />
+    <Tree.File name="invite-team.mdx" />
+  </Tree.Folder>
+  <Tree.Folder name="billing" defaultOpen>
+    <Tree.File name="index.mdx" />
+    <Tree.File name="invoices.mdx" />
+    <Tree.Folder name="payment" defaultOpen>
+      <Tree.File name="index.mdx" />
+      <Tree.File name="add-card.mdx" />
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+<Steps>
+  <Step title="Pick the top-level categories">
+    Use the main questions customers ask, such as setup, billing, security, or troubleshooting.
+  </Step>
+  <Step title="Add nested groups only where they reduce clutter">
+    A nested group is useful when a category has a distinct sub-area, such as payment methods under
+    billing.
+  </Step>
+  <Step title="Give every group a root page">
+    Root pages act as visitable category directories in Help Center themes, so keep them concise and
+    useful.
+  </Step>
+</Steps>
+
+<Warning>
+  Avoid deep nesting unless users truly need it. Two clear levels are usually easier to browse than
+  a long stack of narrowly named subcategories.
+</Warning>

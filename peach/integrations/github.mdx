@@ -1,0 +1,37 @@
+---
+title: "GitHub Integration"
+description: "Connect your content repository to Mintlify for previews, publishing, and collaborative review workflows."
+author:
+  name: "Avery Chen"
+createdDate: "2026-03-10"
+---
+
+GitHub is the most common source of truth for Mintlify sites. Once connected, it becomes the backbone for previews, edits, and controlled publishing.
+
+<Steps>
+  <Step title="Connect the repository">
+    Open **Settings > Integrations > GitHub** and choose the repository that contains your docs.
+  </Step>
+  <Step title="Verify the content path">
+    Confirm the branch and content root are pointing at the folder that contains `docs.json` and
+    your MDX pages.
+  </Step>
+  <Step title="Test a small change">
+    Edit a page or open a pull request to confirm Mintlify creates a preview deployment and reflects
+    the update correctly.
+  </Step>
+  <Step title="Adopt a review flow">
+    Decide whether your team will publish directly from the editor, merge content via pull requests,
+    or use both depending on the type of change.
+  </Step>
+</Steps>
+
+## Branch previews
+
+Each pull request can generate a preview deployment so you can review navigation, formatting, and
+search behavior before you merge.
+
+<Info>
+  If previews are not updating, check branch permissions, repository visibility, and any required
+  checks blocking the connected workflow.
+</Info>
