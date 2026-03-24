@@ -7,6 +7,9 @@
     "light": "#E85D3A",
     "dark": "#E85D3A"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
