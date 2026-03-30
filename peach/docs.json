@@ -27,7 +27,7 @@
       },
       {
         "group": "Using the Product",
-        "icon": "layout-grid",
+        "icon": "blocks",
         "root": "using-the-product/index",
         "pages": [
           "using-the-product/projects-and-environments",

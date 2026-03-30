@@ -15,18 +15,18 @@ icon: "rocket"
 <Tabs sync={false} borderBottom>
   <Tab title="GitHub">
     <Steps>
-      <Step title="Create a new docs project">
+      <Step title="Create a new docs project" id="create-a-new-docs-project">
         In the dashboard, create a new project and choose **Import from GitHub**.
       </Step>
-      <Step title="Authorize repository access">
+      <Step title="Authorize repository access" id="authorize-repository-access">
         Select the repository that will store your docs. Mintlify reads the content, builds preview
         deployments, and opens pull requests from the editor when needed.
       </Step>
-      <Step title="Confirm your content root">
+      <Step title="Confirm your content root" id="confirm-your-content-root">
         Point Mintlify at the folder that contains your `docs.json` and content files. If you are
         starting from scratch, choose the starter layout and customize it after import.
       </Step>
-      <Step title="Review the generated navigation">
+      <Step title="Review the generated navigation" id="review-the-generated-navigation">
         Open the site preview and confirm that the homepage, categories, and article order match the
         structure you expect.
       </Step>
@@ -34,36 +34,36 @@ icon: "rocket"
   </Tab>
   <Tab title="GitLab">
     <Steps>
-      <Step title="Create a new docs project">
+      <Step title="Create a new docs project" id="create-a-new-docs-project">
         Start a new project and choose **Import from GitLab**.
       </Step>
-      <Step title="Grant access to the correct group or repository">
+      <Step title="Grant access to the correct group or repository" id="grant-access-to-the-correct-group-or-repository">
         Make sure the account you connect can read the branch that stores your content.
       </Step>
-      <Step title="Choose the branch to publish from">
+      <Step title="Choose the branch to publish from" id="choose-the-branch-to-publish-from">
         Use your default branch for production and let Mintlify create previews for merge requests.
       </Step>
-      <Step title="Validate the imported structure">
+      <Step title="Validate the imported structure" id="validate-the-imported-structure">
         Check page titles, descriptions, and any nested groups before publishing.
       </Step>
     </Steps>
   </Tab>
   <Tab title="Local preview">
     <Steps>
-      <Step title="Install the CLI">
+      <Step title="Install the CLI" id="install-the-cli">
         ```bash
         npm install -g mint
         ```
       </Step>
-      <Step title="Open your docs directory">
+      <Step title="Open your docs directory" id="open-your-docs-directory">
         Move into the folder that contains `docs.json` and your MDX files.
       </Step>
-      <Step title="Run a local preview">
+      <Step title="Run a local preview" id="run-a-local-preview">
         ```bash
         mint dev
         ```
       </Step>
-      <Step title="Iterate before you connect a repository">
+      <Step title="Iterate before you connect a repository" id="iterate-before-you-connect-a-repository">
         Use local preview to test navigation, search behavior, and page formatting before you wire
         the site into your production workflow.
       </Step>
