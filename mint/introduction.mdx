@@ -59,80 +59,20 @@ mode: custom
   </div>
 
   <Columns cols={3}>
-    <Card
-      horizontal
-      icon="book-open"
-      iconType="light"
-      title="Help Center"
-      href="/essentials/markdown"
-    >
-      Reference docs
-    </Card>
-    <Card horizontal icon="flag" iconType="light" title="Guides" href="/quickstart">
-      Step by step tutorials
-    </Card>
-    <Card horizontal icon="swatchbook" iconType="light" title="Templates" href="/development">
-      Start faster than most
-    </Card>
+    <Card horizontal dynamic iconType="light" href="/essentials/markdown" />
+    <Card horizontal dynamic iconType="light" href="/quickstart" />
+    <Card horizontal dynamic iconType="light" href="/development" />
   </Columns>
 
   <hr className="border-gray-400 dark:border-zinc-600" />
 
   <Columns cols={3}>
-    <Card
-      title="Help Desk Overview"
-      icon="bell-concierge"
-      iconType="light"
-      href="/essentials/navigation"
-      cta="24 articles"
-    >
-      Onboarding, tickets, and team roles
-    </Card>
-    <Card
-      title="Getting Started"
-      icon="rocket"
-      iconType="light"
-      href="/quickstart"
-      cta="24 articles"
-    >
-      Set up your workspace in minutes
-    </Card>
-    <Card
-      title="Channels"
-      icon="file-certificate"
-      iconType="light"
-      href="/essentials/settings"
-      cta="24 articles"
-    >
-      Connect docs to every surface
-    </Card>
-    <Card
-      title="Automation"
-      icon="diagram-project"
-      iconType="light"
-      href="/essentials/reusable-snippets"
-      cta="24 articles"
-    >
-      Snippets, reuse, and workflows
-    </Card>
-    <Card
-      title="Knowledge"
-      icon="brain-circuit"
-      iconType="light"
-      href="/essentials/images"
-      cta="24 articles"
-    >
-      Media, diagrams, and structure
-    </Card>
-    <Card
-      title="Reports"
-      icon="chart-bar"
-      iconType="light"
-      href="/api-reference/introduction"
-      cta="24 articles"
-    >
-      APIs, examples, and references
-    </Card>
+    <Card dynamic iconType="light" href="/essentials/navigation" />
+    <Card dynamic iconType="light" href="/quickstart" />
+    <Card dynamic iconType="light" href="/essentials/settings" />
+    <Card dynamic iconType="light" href="/essentials/reusable-snippets" />
+    <Card dynamic iconType="light" href="/essentials/images" />
+    <Card dynamic iconType="light" href="/api-reference/introduction" />
   </Columns>
 
   <hr className="border-gray-400 dark:border-zinc-600" />
@@ -145,50 +85,16 @@ mode: custom
   </div>
 
   <Columns cols={2}>
+    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
+    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
     <Card
-      title="Notify people instantly with just a click"
-      icon="zap"
+      dynamic
       iconType="light"
       iconPlacement="img"
-      href="https://mintlify.com/docs"
-      cta="Read article"
-      arrow
-    >
-      Send instant notifications to teams and teammates with a single button click.
-    </Card>
-    <Card
-      title="Share social media posts from Mint"
-      icon="hashtag"
-      iconType="light"
-      iconPlacement="img"
-      href="https://mintlify.com/docs"
-      cta="Read article"
-      arrow
-    >
-      Learn how to automate your social media work by connecting using webhooks.
-    </Card>
-    <Card
-      title="Share social media posts from Mint"
-      icon="hashtag"
-      iconType="light"
       img="/images/social-media.png"
-      iconPlacement="img"
       href="https://mintlify.com/docs"
-      cta="Read article"
       arrow
-    >
-      Learn how to automate your social media work by connecting using webhooks.
-    </Card>
-    <Card
-      title="Notify people instantly with just a click"
-      icon="sparkles"
-      iconType="light"
-      iconPlacement="img"
-      href="https://mintlify.com/docs"
-      cta="Read article"
-      arrow
-    >
-      Learn how to automate your social media work by connecting using webhooks.
-    </Card>
+    />
+    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
   </Columns>
 </div>
