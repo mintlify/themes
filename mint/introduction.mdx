@@ -59,12 +59,12 @@ mode: custom
   </div>
 
   <Columns cols={3}>
-    <Card horizontal dynamic iconType="light" href="/essentials/markdown" />
-    <Card horizontal dynamic iconType="light" href="/quickstart" />
-    <Card horizontal dynamic iconType="light" href="/development" />
+    <Card horizontal dynamic iconType="light" href="/essentials/markdown" cta="" />
+    <Card horizontal dynamic iconType="light" href="/guides" cta="" />
+    <Card horizontal dynamic iconType="light" href="/development" cta="" />
   </Columns>
 
-  <hr className="border-gray-400 dark:border-zinc-600" />
+  ---
 
   <Columns cols={3}>
     <Card dynamic iconType="light" href="/essentials/navigation" />
@@ -75,7 +75,7 @@ mode: custom
     <Card dynamic iconType="light" href="/api-reference/introduction" />
   </Columns>
 
-  <hr className="border-gray-400 dark:border-zinc-600" />
+  ---
 
   <div className="flex flex-col gap-2">
     <h3 className="text-xl font-semibold text-gray-900 dark:text-zinc-50">Suggested articles</h3>
@@ -85,16 +85,14 @@ mode: custom
   </div>
 
   <Columns cols={2}>
-    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
-    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
-    <Card
-      dynamic
-      iconType="light"
-      iconPlacement="img"
-      img="/images/social-media.png"
-      href="https://mintlify.com/docs"
-      arrow
-    />
-    <Card dynamic iconType="light" iconPlacement="img" href="https://mintlify.com/docs" arrow />
+    <Card dynamic iconType="light" iconPlacement="feature" href="/suggested/notify-instant" />
+    <div className="contents dark:hidden">
+      <Card dynamic iconType="light" iconPlacement="feature" href="/suggested/share-social" img="/images/hero-dark.png" />
+    </div>
+    <div className="hidden dark:contents">
+      <Card dynamic iconType="light" iconPlacement="feature" href="/suggested/share-social" img="/images/hero-light.png" />
+    </div>
+    <Card dynamic iconType="light" iconPlacement="feature" href="/suggested/share-social-cover" />
+    <Card dynamic iconType="light" iconPlacement="feature" href="/suggested/notify-sparkles" />
   </Columns>
 </div>

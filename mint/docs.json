@@ -17,19 +17,47 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              {
+                "group": "Tutorials",
+                "root": "guides",
+                "pages": [
+                  {
+                    "group": "Hands-on",
+                    "root": "quickstart",
+                    "pages": ["development"]
+                  }
+                ]
+              },
+              {
+                "group": "Landing suggested articles",
+                "hidden": true,
+                "pages": [
+                  "suggested/notify-instant",
+                  "suggested/share-social",
+                  "suggested/share-social-cover",
+                  "suggested/notify-sparkles"
+                ]
+              }
             ]
           },
           {
             "group": "Essentials",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              {
+                "group": "Writing",
+                "root": "essentials/markdown",
+                "pages": ["essentials/code"]
+              },
+              {
+                "group": "Site structure",
+                "root": "essentials/navigation",
+                "pages": ["essentials/settings"]
+              },
+              {
+                "group": "Content & reuse",
+                "root": "essentials/reusable-snippets",
+                "pages": ["essentials/images"]
+              }
             ]
           }
         ]
@@ -39,12 +67,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
+            "root": "api-reference/introduction",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
